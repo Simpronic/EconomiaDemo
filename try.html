@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form con Textarea</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+<script type="module" src="RestApi.js"></script>
+<script type="module" src="TextAnalyzer.js"></script>
+<script type="module" src="ChatgptReq.js"></script>
+</head>
+<body>
+
+  <h1>Form con Textarea</h1>
+  
+  <form id="simpleForm" onsubmit="return false;">
+    <label for="editable-textarea">Textarea Editabile:</label>
+    <textarea id="ETextA" name="editable-textarea" placeholder="Inserisci qui il testo..."></textarea>
+    
+    <label for="readonly-textarea">Textarea Non Editabile:</label>
+    <textarea id="NETextA" name="readonly-textarea" readonly></textarea>
+    
+    <button type="submit">Invia</button>
+  </form>
+
+</body>
+</html>

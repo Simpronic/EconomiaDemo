@@ -1,4 +1,4 @@
-const MyApiKey = "Bearer sk-proj-UccJmpHq9AO1G2LpD1sWT3BlbkFJKJqmg8M8gn4XZZBJxVwE";
+//const MyApiKey = "Bearer sk-proj-UccJmpHq9AO1G2LpD1sWT3BlbkFJKJqmg8M8gn4XZZBJxVwE";
 const myserver = 'http://localhost:8080/';
 const endpoint = 'https://api.openai.com/v1/chat/completions';
 

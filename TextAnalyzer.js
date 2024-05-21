@@ -1,8 +1,8 @@
 const MyApiKey = "6830364c58ae6dfcc3eed064b22fc5c33316e80ce4ba08fdaed8562b";
 const email = "jepap11724@cgbird.com"
 const psw = "7X6qV$ncfQp9!Kc"
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const myserver = 'http://localhost:8080/'
+const endpoint = 'https://api.textrazor.com'
 
 /*export async function AnalyzeText(inserted_text){
     try{
@@ -33,7 +33,7 @@ const myserver = 'http://localhost:8080/'
 
 export async function AnalyzeText(inserted_text) {
     try {
-        const response = await fetch(myserver, {
+        const response = await fetch(myserver+endpoint, {
             method: 'POST',
             headers: {
                 'x-textrazor-key': MyApiKey,
@@ -41,7 +41,6 @@ export async function AnalyzeText(inserted_text) {
             },
             body: new URLSearchParams({
                 'extractors': 'topics',
-                'classifiers': 'textrazor_mediatopics',
                 'text': inserted_text
             }).toString()
         });
